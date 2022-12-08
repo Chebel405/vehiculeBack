@@ -12,12 +12,12 @@ import java.util.List;
 @EntityScan
 
 public class Locataire {
+    private Long id;
+    private String email;
 
-    public Long id;
-    public String email;
-    public String nom;
-    public String prenom;
-    public String password;
+    private String nom;
+    private String prenom;
+    private String password;
     //Faire la liste de location de vehicule
     private List<Location> location = new ArrayList<>();
     //Faire la liste de vehicules louées

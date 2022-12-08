@@ -1,5 +1,6 @@
 package fr.kira.formation.spring.examen.vehicule.vehicules;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -7,7 +8,9 @@ import java.util.List;
 
 public class VehiculeServiceImpl implements VehiculeService{
 
-    private VehiculeRepository vehiculeRepository;
+    private final VehiculeRepository vehiculeRepository;
+
+
 
     //private LocataireService locataireService;
 
