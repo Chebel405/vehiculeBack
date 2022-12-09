@@ -12,10 +12,14 @@ public class LocataireController {
 
     private final LocataireService locataireService;
 
-
+    /**
+     * Constructeur
+     * @param locataireService
+     */
     public LocataireController(LocataireService locataireService) {
         this.locataireService = locataireService;
     }
+
 
     @GetMapping("")
     public List<Locataire> findAll() {
@@ -27,7 +31,7 @@ public class LocataireController {
         locataireService.deleteById(id);
     }
 
-    @PutMapping("{id}/locataires")
+    @PutMapping("{id}/locataire")
     public Locataire ajoutLocataire(@PathVariable String id ){
         return this.locataireService.ajoutLocataire(id);
     }

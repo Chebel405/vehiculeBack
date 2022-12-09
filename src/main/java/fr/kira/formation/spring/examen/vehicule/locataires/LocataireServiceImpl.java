@@ -6,6 +6,7 @@ import fr.kira.formation.spring.examen.vehicule.vehicules.VehiculeService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class LocataireServiceImpl implements LocataireService{
@@ -47,4 +48,5 @@ public class LocataireServiceImpl implements LocataireService{
         Locataire locataire = this.findById(id);
         return locataire;
     }
+
 }

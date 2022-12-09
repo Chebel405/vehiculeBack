@@ -12,7 +12,6 @@ public class VehiculeConfiguration {
 
     @Bean
     public VehiculeService vehiculeService(VehiculeRepository vehiculeRepository){
-        logger.debug("Creation du bean VéhiculeService");
         return new VehiculeServiceImpl(vehiculeRepository);
     }
 }
