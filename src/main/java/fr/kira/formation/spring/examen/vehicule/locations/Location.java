@@ -24,6 +24,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Configuration
 @EntityScan
+
 public class Location  {
     @Id
     @Generated
