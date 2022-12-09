@@ -26,4 +26,13 @@ public class VehiculeApplication {
 		};
 	}
 
+	/*@Bean
+	public Docket api(){
+		return new Docket(DocumentationType.Swagger_2)
+				.select()
+				.apis(RequestHandlerSelectors.any())
+				.paths(PathSelectors.any))
+				.build();
+	}*/
+
 }
