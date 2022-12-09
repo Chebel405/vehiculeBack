@@ -11,5 +11,7 @@ logging:
     jpa:
       hibernate:
         ddl-auto: update
+    jackson:
+      date-format: "yyyy ss hh mm dd ww MM"
 
 

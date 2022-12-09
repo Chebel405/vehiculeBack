@@ -16,6 +16,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.lang.annotation.Target;
+import java.time.LocalDateTime;
 
 @Data
 @Document
@@ -29,11 +30,11 @@ public class Location  {
 
     private Long id;
 
-    @DateTimeFormat
-    private DateTimeFormat dateDebut;
+    @JsonFormat(pattern = "ww day/MM/yyyy")
+    private LocalDateTime dateDebut;
 
-    @DateTimeFormat
-    private DateTimeFormat dateFin;
+    @JsonFormat(pattern = "ww day/MM/yyyy")
+    private LocalDateTime dateFin;
 
     private Number prixTotal;
 

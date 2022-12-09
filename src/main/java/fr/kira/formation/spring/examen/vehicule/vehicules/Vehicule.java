@@ -11,6 +11,7 @@ import java.util.List;
 
 @Data
 @EntityScan
+
 public class Vehicule {
     @Id
     private Long id;
@@ -22,7 +23,8 @@ public class Vehicule {
     private String status;
     private String type;
 
+    //@OneToMany()
     private List<Location> location = new ArrayList<>();
-
+    //@ManyToOne()
     private List<Locataire> locataire = new ArrayList<>();
 }
