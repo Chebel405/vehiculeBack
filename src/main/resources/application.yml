@@ -8,4 +8,8 @@ logging:
     org: WARN
     fr: TRACE
 
+    jpa:
+      hibernate:
+        ddl-auto: update
+
 

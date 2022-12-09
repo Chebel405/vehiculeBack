@@ -20,17 +20,29 @@ public class LocataireController {
         this.locataireService = locataireService;
     }
 
-
+    /**
+     * Appel à la méthode findAll pour afficher tout les locataires
+     * @return La liste des locataires
+     */
     @GetMapping("")
     public List<Locataire> findAll() {
         return locataireService.findAll();
     }
 
+    /**
+     * Permet de supprimer les locataires en faisant appel à leur id
+     * @param id identifiant du locataire à supprimer
+     */
     @DeleteMapping("{id}")
     public void deletedById(@PathVariable String id){
         locataireService.deleteById(id);
     }
 
+    /**
+     * Permet d'ajouter un nouveau locataire avec comme parametre un nouvel identifiant
+     * @param id identifiant du nouveau locataire
+     * @return
+     */
     @PutMapping("{id}/locataire")
     public Locataire ajoutLocataire(@PathVariable String id ){
         return this.locataireService.ajoutLocataire(id);

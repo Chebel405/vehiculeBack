@@ -14,6 +14,7 @@ import java.util.List;
 
 @Data
 @EntityScan
+@Configuration
 
 public class Locataire {
     @Id

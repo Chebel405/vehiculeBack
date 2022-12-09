@@ -8,27 +8,38 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Generated;
 import lombok.NoArgsConstructor;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
+
+import java.lang.annotation.Target;
+
 @Data
 @Document
 @NoArgsConstructor
 @AllArgsConstructor
-public class Location {
+@Configuration
+@EntityScan
+public class Location  {
     @Id
     @Generated
+
     private Long id;
+
     @DateTimeFormat
     private DateTimeFormat dateDebut;
+
     @DateTimeFormat
     private DateTimeFormat dateFin;
+
     private Number prixTotal;
 
-   // @ManyToOne
+    //@ManyToOne
     private Locataire locataire;
-    // @ManyToOne
+    //@OneToMany
     private Vehicule vehicule;
 
 

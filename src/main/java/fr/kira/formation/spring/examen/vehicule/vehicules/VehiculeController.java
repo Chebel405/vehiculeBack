@@ -41,6 +41,12 @@ public class VehiculeController {
     public void deleteById(@PathVariable String id){
         vehiculeService.deleteById(id);
     }
+
+    /**
+     * Permet d'ajouter un vehicule
+     * @param id représente le nouveau véhicule
+     * @return
+     */
     @PutMapping("{id}/vehicules")
     public Vehicule ajoutVehicule(@PathVariable String id ){
         return this.vehiculeService.ajoutVehicule(id);
