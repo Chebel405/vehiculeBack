@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Projet compétences
 ## Présentation
 Ce projet est un projet de fin de formation de la Wild Code School de Nantes. Il a pour but de mettre en pratique les compétences acquises par les membres d'équipes.
@@ -19,3 +20,6 @@ Pour lancer l'application, il faut se placer dans le dossier racine et lancer la
 ./gradlew spring-boot:run
 Lancement de l'application avec IntelliJ
 Pour laancer l'application avec un IDE, lancer la class MycompApplication
+=======
+# vehiculeBack
+>>>>>>> c7168615fb01f744ceabdf6098cbd5ab394a037d
